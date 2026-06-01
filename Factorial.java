@@ -1,11 +1,19 @@
+import java.util.Scanner;
+
 public class Factorial {
     public static void main(String[] args) {
-        int numero = 5;
-        int factorial = 1;
-        for (int i = 1; i <= numero; i++) {
-            factorial *= i;
-            }
-            System.out.println("El factorial de " + numero + " es: " + factorial);
-            }
-            }
-          
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese un número: ");
+        int num = sc.nextInt();
+
+        long factorial = 1;
+
+        while (num > 0) {
+            factorial *= num;
+            num--;
+        }
+
+        System.out.println("Factorial = " + factorial);
+    }
+}
