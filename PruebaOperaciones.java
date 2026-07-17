@@ -1,14 +1,15 @@
-package c05.p05;
+package c05.p06;
 
 class PruebaOperaciones {
     public static void main(String[] args) {
         Operaciones operaciones = new Operaciones();
 
-        operaciones.concatenarTexto("Primero", "Segundo");
-        operaciones.concatenarTexto("Tercero", "Cuarto");
+        int resultado = operaciones.sumar(10, 20);
+        System.out.println( resultado );
 
-        operaciones.imprimirSuma(10, 20);
-        operaciones.imprimirSuma(30, 40);
+        System.out.println( operaciones.restar(30, 9) );
+
+        System.out.println( operaciones.cuadrado(11) );
 
     } // Fin del método main
 } // Fin de la Clase PruebaOperaciones
