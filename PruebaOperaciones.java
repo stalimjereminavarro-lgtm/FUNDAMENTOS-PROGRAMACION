@@ -1,13 +1,14 @@
-package c05.p07;
+package c06.p08;
 
-class PruebaOperaciones {
+public class PruebaOperaciones {
     public static void main(String[] args) {
-        Operaciones operaciones = new Operaciones();
+        Operaciones obj1 = new Operaciones();
 
-        operaciones.mostrarDatos(99);
-        operaciones.mostrarDatos("Hola");
-        operaciones.mostrarDatos(99, "Hola");
-        operaciones.mostrarDatos("Hola", 99);
+        System.out.println(obj1.sumar(10, 20));
+        System.out.println(Operaciones.sumar(10, 20));
+
+        System.out.println(obj1.restar(30, 20));
+        System.out.println(Operaciones.restar(30, 20));
 
     } // Fin del método main
-} // Fin de la Clase PruebaOperaciones
+} // Fin de la clase PruebaOperaciones
