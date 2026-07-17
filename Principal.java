@@ -1,13 +1,14 @@
-package c06.p09;
+package c06.p10;
 
 public class Principal {
     public static void main(String[] args) {
-        int variable1 = 50;
-        System.out.println("Variable (antes):" + variable1);
+        Persona objeto1 = new Persona();
+        objeto1.edad = 15;
+        System.out.println("Edad (antes):" + objeto1.edad);
         
-        Acciones.imprimeIncremento(variable1);
+        Acciones.imprimeCambioDeEdad(objeto1);
         
-        System.out.println("Variable (después): " + variable1);
+        System.out.println("Edad (después): " + objeto1.edad);
 
     } // Fin del método main
 } // Fin de la clase Principal
