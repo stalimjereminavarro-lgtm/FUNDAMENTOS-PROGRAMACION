@@ -1,13 +1,13 @@
-package c06.p03;
+package c06.p04;
 
 class PruebaPersona {
     public static void main(String[] args) {
-        Persona persona = new Persona();
+        Persona persona = new Persona("Alex", 20);
 
         persona.imprimirCampos();
 
-        persona.setNombre("Alex");
-        persona.setEdad(20);
+        persona.setNombre("Beto");
+        persona.setEdad(19);
 
         persona.imprimirCampos();
 
