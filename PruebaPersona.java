@@ -1,12 +1,15 @@
-package c06.p01;
+package c06.p02;
 
 class PruebaPersona {
     public static void main(String[] args) {
         Persona persona = new Persona();
 
-        persona.imprimirCampos();
-        persona.nombre = "Alex";
-        persona.edad = 20;
+        System.out.println(persona.getNombre());
+        System.out.println(persona.getEdad());
+
+        persona.setNombre("Alex");
+        persona.setEdad(20);
+
         persona.imprimirCampos();
 
     } // Fin del método main
