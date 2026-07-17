@@ -1,14 +1,14 @@
-package c06.p10;
+package c07.p01;
 
 public class Principal {
     public static void main(String[] args) {
-        Persona objeto1 = new Persona();
-        objeto1.edad = 15;
-        System.out.println("Edad (antes):" + objeto1.edad);
-        
-        Acciones.imprimeCambioDeEdad(objeto1);
-        
-        System.out.println("Edad (después): " + objeto1.edad);
+        Persona persona1 = new Persona();
+
+        persona1.setNombre("Alberto");
+        persona1.setApellidoPaterno("Arenas");
+        persona1.setApellidoMaterno("Aguirre");
+
+        persona1.imprimirCampos();
 
     } // Fin del método main
 } // Fin de la clase Principal
