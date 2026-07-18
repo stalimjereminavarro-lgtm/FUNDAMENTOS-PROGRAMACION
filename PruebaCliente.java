@@ -1,4 +1,4 @@
-package c07.p01;
+package c07.p02;
 
 public class PruebaCliente {
     public static void main(String[] args) {
